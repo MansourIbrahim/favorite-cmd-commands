@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: azure;
+    transition-delay: 3s;
+}
+
+h1, h2{
+    text-align: center;
+    font-family: cursive;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+h3{
+    text-align: center;
+    font-family: monospace;
+}
+h3:hover{
+    text-decoration: underline;
+}
+
+p{
+    text-align: center;
+    font-family: inherit;
+}
+p:hover{
+    font-weight: bolder;
+}
+
+img{
+    width: 99%;
+    height: 300px;
+    border: 1px solid #dce0e3;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+img:hover{
+    border: 2px solid #1d4771;
+}
+section{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#grid-floats li:nth-child(2) p, #grid-flex li:nth-child(2) p{
+    text-align: right;
+}
+.grid-item{
+    width: 21%;
+    height: 470px;
+    padding: 0.5%;
+    list-style: none;
+    border: 1px solid #1d4771;
+    border-radius: 5px;
+    margin: 25px 1.4%;
+    overflow: auto;
+    box-shadow: -5px -1px 40px -17px rgba(0,0,0,1);
+-webkit-box-shadow: -5px -1px 40px -17px rgba(0,0,0,1);
+-moz-box-shadow: -5px -1px 40px -17px rgba(0,0,0,1);
+}
+#grid-floats li:nth-child(n):nth-child(-n+2){ 
+    margin: 25px 13%;
+    
+}
+#grid-floats li:nth-child(n):nth-child(-n+14){
+    
+    float: left;
+}
+
+
+
+#grid-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:flex-start;
+    overflow: hidden;
+}
+#grid-flex li:nth-child(n):nth-child(-n+2){ 
+        margin: 25px 13%;
+    }
+
+
+@media screen and (max-width: 1024px) and (min-width: 600px){
+    #grid-floats li:nth-child(n):nth-child(-n+2){ 
+        margin: 25px 5.5%;
+        width: 37.5%;
+    }
+    #grid-flex li:nth-child(n):nth-child(-n+2){ 
+        margin: 25px 5.5%;
+        width: 37.5%;
+    }
+    .grid-item{
+        margin: 25px 5.4%;
+    }
+    
+}
+    
+@media screen and (max-width: 600px){
+    #grid-floats li{
+        clear: left;
+        width: 90%;
+        margin: 25px 5%;
+    }
+    #grid-floats li:nth-child(n):nth-child(-n+2){ 
+         width: 90%;
+        margin: 25px 5%;
+    }
+    #grid-flex{
+    display: flex;
+    flex-flow: column;
+    align-items:flex-start;
+    overflow: hidden;
+    }
+    #grid-flex li{
+        clear: left;
+        width: 90%;
+        margin: 25px 5%;
+    }
+    #grid-flex li:nth-child(n):nth-child(-n+2){ 
+         width: 90%;
+        margin: 25px 5%;
+    }
+        
+}
