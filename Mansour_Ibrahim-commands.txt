@@ -1,0 +1,11 @@
+some commands that i like:
+
+$ ls    ---  list folder and files
+
+$ touch    ---  create an empty file 
+
+$ code  ---   open visual studio code
+
+$ ls -a   ----  list (hidden&visible) folder
+
+$ clear   ---  clear git bash display
