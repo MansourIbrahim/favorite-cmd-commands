@@ -4,7 +4,6 @@
 }
 body{
     background-color: azure;
-    transition-delay: 3s;
 }
 
 h1, h2{
@@ -37,10 +36,12 @@ img{
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    transition: transform 3s;
 }
 
 img:hover{
     border: 2px solid #1d4771;
+    transform: rotate(360deg);
 }
 section{
     overflow: hidden;
