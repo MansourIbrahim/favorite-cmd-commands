@@ -35,12 +35,12 @@ img{
     border-radius: 5px;
     margin: 25px;
     padding: 10px;
-    transition: transform 3s;
+    transition: transform 2s;
     
 }
 
 img:hover{
-    border: 2px solid #1d4771;
+    border: 1px solid #1d4771;
     transform: rotate(360deg);
 }
 section{
